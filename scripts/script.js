@@ -153,7 +153,8 @@ function startGame(){
 }
 
 function restart(){
-    stopGame()
+    startCondition = null
+    button.style.backgroundColor = 'royalblue'  
     notDraw()
     score = 0
     endTime = null
@@ -185,6 +186,7 @@ function game(){
 
 function error(){
         clearTimeout(timeOut)
+        score = 0
         button.style.backgroundColor = 'rgb(182, 40, 40)'
         button.style.fontSize = '2vw'
         button.innerHTML = 'You clicked too early. Press Restart button to try again'
