@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <title>Reaction App</title>
+</head>
+<body>
+    <header>
+        <h1>REACTION GAME</h1>
+    </header>
+    <div class="container">
+        <div class="instructions_container">
+            <h2>Instructions:</h2>
+            <ul>
+                <li>Press the GO button! to start the game</li>
+                <li>After a few seconds the circle will turn green and the timer will start.</li>
+                <li>Try to stop the timer as fast as you can</li>
+                <li>If you click before it turns green, you will lose the game.</li>
+                <li>Press the Restart button to start again</li>
+                <li>Your lowest time will be saved as "Lowest Time"</li>
+                <li>¡Enjoy the game and test your reaction!</li>
+            </ul>
+        </div>        
+        <div class="responsive_container">            
+            <div class="game_container">
+                <div class="timer_container">
+                    <span id="score" class="span"></span>
+                </div>
+                <button id="circle"></button>
+                <button id='restart_button'>RESTART</button>
+            </div>
+            <div class="score_container">
+                <h2>Lowest Time:</h2>
+                <span>- </span><span id="highscore" class="span"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
